@@ -1,0 +1,655 @@
+/* styles.css */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --black:black;
+    --white:white;
+    --red:red;
+    --green:rgb(24, 201, 224);
+}
+
+
+/* landing page*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.landing{
+    background-image: url(main_bg.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 50px;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar ul li a:hover{
+    transition: .2s;
+    color: var(--white);
+    background-color: var(--red);
+    border-radius: 4px;
+}
+
+.navbar ul{
+    margin-top: 10px;    
+}
+
+.navbar h2{
+    color: var(--green);
+    letter-spacing: .1cm;
+    font-size: 3rcap;
+    cursor: pointer;
+}
+
+.btn{
+    margin-top: 10px;
+}
+
+.btn a{
+    color: var(--white);
+    text-decoration: none;
+    border: 2px solid var(--red);
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    border-radius: 3px;
+}
+
+.btn a:hover{
+    transition: .2s;
+    background-color: var(--red);
+    box-shadow: 5px 5px 10px var(--red);
+}
+
+/* Styles for the hamburger menu */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    background-color:var(--white);
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/*home content section */
+
+.home-content h1{
+    margin-top: 10px;
+    line-height: 1.5cm;
+    letter-spacing: .2;
+    color: var(--red);
+    font-size: 5rcap;
+}
+
+.home-content b{
+    letter-spacing: .1;
+    word-spacing: .2cm;
+    font-size: 2rcap;
+}
+
+.home-content p{
+    margin-top: 30px;
+    text-align: justify;
+    margin-right: 20px;
+}
+.home-content{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+/*main button section*/
+
+.main-btn a{
+    border: 1px solid var(--red);
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 5px;
+    font-size: 2rcap;
+    background-color: var(--red);
+    text-decoration: none;
+    color: var(--white);
+}
+
+
+.main-btn a:hover{
+    transition: .2s;
+    box-shadow: 2px 2px 5px var(--red);
+}
+
+.main-btn{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+/*about content*/
+
+.about h1{
+    margin-top: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 4rcap;
+    font-style: italic;
+    letter-spacing: .1cm;
+    text-shadow: 1px 2px 1px var(--white);
+}
+
+.about h1 span{
+    color: var(--red);
+    text-shadow: 1px 2px 1px var(--red);
+}
+
+.about-content{
+    display: flex;
+    border: 1px solid var(--red);
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+/*text content*/
+
+.home-text-content{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 2rcap;
+    text-align: justify;
+}
+
+.home-text-content h2{
+    color: var(--red);
+    letter-spacing: .1cm;
+}
+
+.home-text-content p{
+    margin-top: 10px;
+    line-height: .7cm;
+}
+
+/*text image*/
+
+.about-image img{
+    height: 400px;
+    width: 500px;
+}
+
+/* faclities page */
+
+.service h1{
+    margin-top: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 4rcap;
+    font-style: italic;
+    letter-spacing: .1cm;
+    text-shadow: 1px 2px 1px var(--white);
+}
+
+.service h1 span{
+    color: var(--red);
+    text-shadow: 1px 2px 1px var(--red);
+}
+
+/* service content  for gym */
+
+.gym{
+    border: 1px solid var(--red);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+.gym ul h2{
+    color: var(--red);
+    text-shadow: 1px 1px 1px var(--black);
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 3rcap;
+    letter-spacing: .1cm;
+}
+
+.gym ul li {
+    margin-left: 70px;
+    line-height: .8cm;
+    font-size: large;
+}
+
+.gym img{
+    height: 300px;
+    width: 300px;
+}
+
+/*service content or shuttle */
+
+.shuttle{
+    border: 1px solid var(--red);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+.shuttle ul h2{
+    color: var(--red);
+    text-shadow: 1px 1px 1px var(--black);
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 3rcap;
+    letter-spacing: .1cm;
+}
+
+.shuttle ul li {
+    margin-left: 70px;
+    line-height: .8cm;
+    font-size: large;
+}
+
+.shuttle img{
+    height: 300px;
+    width: 300px;
+}
+
+/*contect section*/
+
+.contect-content{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contect-content h2{
+    text-transform: capitalize;
+    font-style: none;
+    color: var(--red);
+    letter-spacing: .1cm;
+    word-spacing: .2cm;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.contect-main-content{
+    margin-left: 20px;
+}
+
+.contect-main-content address{
+    line-height: .8cm;
+}
+
+.contect-main-content p{
+    line-height: .8cm;
+}
+
+.contect h1{
+    margin-top: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 4rcap;
+    font-style: italic;
+    letter-spacing: .1cm;
+    text-shadow: 1px 2px 1px var(--white);
+}
+
+.copy i{
+    margin-right: 5px;
+    font-size: xx-large;
+}
+
+.copy i:hover{
+    color: var(--red);
+    padding: 1px;
+    transition: .5s;
+}
+
+
+/* Responsive styles */
+
+@media (min-width: 1024px) and (max-width:1280px){
+    html{
+        font-size: 100%;
+    }
+    .contect-content h2{
+        margin-top: 20px;
+    }
+    .home-text-content{
+        margin-top: 2px;
+    }
+    .home-text-content p{
+        line-height: .65cm;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1024px){
+    .btn{
+        display: none;
+    }
+    .nav-links {
+        display: block;
+        flex-direction: column;
+        display: none;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        margin-top: 10px;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 650px;
+    }
+    .nav-links li a:hover{
+        background-color: var(--red);
+        color:var(--white);
+        border-radius: 5px;
+    }
+    .hamburger-menu {
+        display: flex;
+    }
+
+    /* about page */
+    .home-text-content h2{
+        letter-spacing: normal;
+        word-spacing: normal;
+    }
+    .home-text-content p{
+        line-height: normal;
+    }
+    .about-content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-image img{
+        display: none;
+    }
+
+    /*service page */
+    .gym img{
+        display: none;
+    }
+    .gym{
+        background-image: url(gym.png);
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .shuttle img{
+        display: none;
+    }
+    .shuttle{
+        background-image: url(shuttle.png);
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+    }
+    /*contect page */
+    .map iframe{
+        height: 450px;
+        width: 500px;
+    }
+    .contect-content h2{
+        margin-top: 20px;
+    }
+
+}
+
+@media (min-width: 640px) and (max-width:768px){
+    .btn{
+        display: none;
+    }
+    .nav-links {
+        display: block;
+        flex-direction: column;
+        display: none;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        margin-top: 10px;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 440px;
+    }
+    .nav-links li a:hover{
+        background-color: var(--red);
+        color:var(--white);
+        border-radius: 5px;
+    }
+    .hamburger-menu {
+        display: flex;
+    }
+    
+    /*about page*/
+    .about-image img{
+        display: none;
+    }
+
+    /*service page */
+    .gym img{
+        display: none;
+    }
+    .gym{
+        background-image: url(gym.png);
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .shuttle img{
+        display: none;
+    }
+    .shuttle{
+        background-image: url(shuttle.png);
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+    }
+
+    /*contect page*/
+    .map iframe{
+        display: none;
+    }
+    .contect-content{
+        display: block;
+    }
+}
+
+@media (min-width:475px) and (max-width:640px){
+    .landing{
+        background-image: url(sub_bg.jpg);
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .btn{
+        display: none;
+    }
+    .nav-links {
+        display: block;
+        flex-direction: column;
+        display: none;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        margin-top: 10px;
+        text-align: center;
+        margin-top: 30px;
+        margin-left:375px;
+    }
+    .nav-links li a:hover{
+        background-color: var(--red);
+        color:var(--white);
+        border-radius: 5px;
+    }
+    .hamburger-menu {
+        display: flex;
+    }
+
+    /*about page*/
+    .about-image img{
+        display: none;
+    }
+
+    /*service page */
+    .gym img{
+        display: none;
+    }
+    .gym{
+        background-image: url(gym.png);
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .gym ul li{
+        margin-left: 50px;
+    } 
+    .shuttle img{
+        display: none;
+    }
+    .shuttle{
+        background-image: url(shuttle.png);
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+    }
+    .shuttle ul li {
+        margin-left: 50px;
+    }
+
+    /*contect page*/
+    .map iframe{
+        display: none;
+    }
+    .contect-content{
+        display: block;
+    }
+}
+
+@media (max-width:475px){
+    .landing{
+        background-image: url(sub_bg.jpg);
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .btn{
+        display: none;
+    }
+    .nav-links {
+        display: block;
+        flex-direction: column;
+        display: none;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        margin-top: 10px;
+        text-align: center;
+        margin-top: 30px;
+        margin-left:100px
+    }
+    .nav-links li a:hover{
+        background-color: var(--red);
+        color:var(--white);
+        border-radius: 5px;
+    }
+    .hamburger-menu {
+        display: flex;
+    }
+    /*about page*/
+    .about-image img{
+        display: none;
+    }
+
+    /*service page */
+    .gym img{
+        display: none;
+    }
+    .gym{
+        background-image: url(gym.png);
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 10px;
+    }
+    .gym ul li{
+        margin-left: 20px;
+    } 
+    .shuttle img{
+        display: none;
+    }
+    .shuttle{
+        background-image: url(shuttle.png);
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+        margin: 10px;
+    }
+    .shuttle ul li {
+        margin-left: 20px;
+    }
+
+    /*contect page*/
+    .map iframe{
+        display: none;
+    }
+    .contect-content{
+        display: block;
+    }
+}
